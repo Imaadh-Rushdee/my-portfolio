@@ -14,9 +14,30 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
-    name: "Java",
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/python-original.svg",
+  },
+  {
+    name: "FastAPI",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
   },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    name: "Oracle Database",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  },
+  {
+    name: "HTML",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/html-original.svg",
+  },
+
 ];
 
 

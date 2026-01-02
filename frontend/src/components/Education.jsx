@@ -1,21 +1,27 @@
+import { useState } from "react";
+
 const educationData = [
   {
-    degree: "BSc in Software Engineering",
-    institution: "Your University Name",
-    duration: "2023 – Present",
-    description:
-      "Focused on software development, data structures, databases, and building scalable applications using modern technologies.",
-  },
-  {
-    degree: "Advanced Level (A/L)",
-    institution: "Your School Name",
-    duration: "2020 – 2022",
+    degree: "Higher National Diploma in Software Engineering",
+    institution: "National Institute Of Business Management",
+    duration: "2025 - 2026",
     description:
       "Studied mathematics, science, and technology-related subjects, building a strong foundation for engineering studies.",
+    certificate: null,
+  },
+  {
+    degree: "Diploma In Software Engineering",
+    institution: "National Institute Of Business Management",
+    duration: "2024 - 2025",
+    description:
+      "Focused on software development, data structures, databases, and building scalable applications using modern technologies.",
+    certificate: "/certificates/diploma-software-engineering.jpg",
   },
 ];
 
 export default function Education() {
+  const [selectedCert, setSelectedCert] = useState(null);
+
   return (
     <section
       id="education"
@@ -50,10 +56,47 @@ export default function Education() {
               <p className="text-gray-700 dark:text-gray-400 mt-2 text-sm leading-relaxed">
                 {edu.description}
               </p>
+
+              {/* View Certificate Button */}
+              {edu.certificate ? (
+                <button
+                  onClick={() => setSelectedCert(edu.certificate)}
+                  className="mt-4 inline-block text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  View Certificate →
+                </button>
+              ) : (
+                <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 italic">
+                  No certificate available
+                </p>
+              )}
+
             </div>
           ))}
         </div>
       </div>
+
+      {/* Certificate Modal */}
+      {selectedCert && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
+          <div className="relative bg-white dark:bg-gray-900 rounded-xl p-4 max-w-3xl w-full">
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedCert(null)}
+              className="absolute top-3 right-3 text-gray-600 dark:text-gray-300 text-2xl"
+            >
+              ✕
+            </button>
+
+            {/* Certificate Image */}
+            <img
+              src={selectedCert}
+              alt="Certificate"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
