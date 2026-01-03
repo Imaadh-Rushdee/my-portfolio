@@ -7,7 +7,7 @@ const skills = [
   },
   {
     name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    icon: "https://cdn.simpleicons.org/tailwindcss/38BDF8",
   },
   {
     name: "JavaScript",
@@ -15,30 +15,30 @@ const skills = [
   },
   {
     name: "Python",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/python-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
     name: "FastAPI",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    icon: "https://cdn.simpleicons.org/fastapi/009688",
   },
   {
     name: "PHP",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
   {
     name: "Oracle Database",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
   },
   {
     name: "MySQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   {
     name: "HTML",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/html-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
-
 ];
+
 
 
 export default function Skills() {

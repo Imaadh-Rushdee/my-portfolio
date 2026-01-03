@@ -14,16 +14,16 @@ function Navbar({ darkMode, setDarkMode }) {
       {/* Center: Menu */}
       <div className="flex-1 flex justify-center space-x-8">
         <a
+          href="#home"
+          className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+        >
+          Home
+        </a>
+        <a
           href="#about"
           className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
         >
           About
-        </a>
-        <a
-          href="#bio"
-          className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
-        >
-          Bio
         </a>
         <a
           href="#skills"
@@ -36,6 +36,18 @@ function Navbar({ darkMode, setDarkMode }) {
           className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
         >
           Projects
+        </a>
+        <a
+          href="#education"
+          className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+        >
+          Education
+        </a>
+        <a
+          href="#references"
+          className="text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400"
+        >
+          References
         </a>
         <a
           href="#contact"
